@@ -18,7 +18,7 @@ class Message(models.Model):
 class Group(models.Model):
     name = models.CharField(max_length=255)
     creator = models.ForeignKey(User, on_delete=models.CASCADE)
-    users = models.ManyToManyField(User)
+    users = models.ManyToManyField(User, related_name="participants")
     messages = models.ManyToManyField(Message)
 
     def __str__(self):
