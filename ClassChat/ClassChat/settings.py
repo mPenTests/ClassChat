@@ -76,7 +76,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'ClassChat.wsgi.application'
+ASGI_APPLICATION = 'ClassChat.routing.application'
 
 
 # Database
