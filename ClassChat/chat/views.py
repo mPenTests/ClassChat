@@ -24,5 +24,17 @@ def login(request):
 
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
-def profile(request):
+def get_friends(request):
+    pass
+
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def get_groups(request):
+    pass
+
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def get_messages(request):
     pass
