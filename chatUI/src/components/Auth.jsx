@@ -2,7 +2,6 @@ import '../styles/auth.scss';
 import Form from 'react-bootstrap/Form';
 import { Flex } from '@chakra-ui/react';
 import { FcGoogle } from 'react-icons/fc';
-import { AiFillApple } from 'react-icons/ai';
 
 
 function Auth() {
@@ -22,15 +21,15 @@ function Auth() {
                       <Form.Label>Password</Form.Label>
                       <Form.Control required type="password" placeholder="Password" />
                     </Form.Group>
-                    <Flex flexDirection={"column"} gap={"20px"} id='auth-flex'>
+                    <Flex textAlign={"center"} flexDirection={"column"} gap={"20px"} id='auth-flex' justifyContent={"center"}>
                         <button className="auth-btn" type="submit">Login</button>
                         <button className="auth-btn" type="submit">Register</button>
                     </Flex>
-                    <Flex flexDirection={"row"} justifyContent={"center"} id='oauth-flex' gap={"20px"}>
-                        <button><FcGoogle /></button>
-                        <button><AiFillApple /></button>
-                    </Flex>
                 </Form>
+                <hr />
+                <Flex flexDirection={"row"} justifyContent={"center"} id='oauth-flex' gap={"20px"}>
+                    <button><FcGoogle /></button>
+                </Flex>
             </div>
         </div>
     )

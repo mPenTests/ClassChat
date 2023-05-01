@@ -39,13 +39,15 @@
         }
 
         #oauth-flex {
-            margin-top: 50px;
+            margin-top: 5px;
 
             button {
                 background: none;
-                font-size: 40px;
+                font-size: 45px;
+                width: 100%;
                 border: none;
-                color: white;
+                height: 50px;
+                text-align: center;
             }
         }
 
