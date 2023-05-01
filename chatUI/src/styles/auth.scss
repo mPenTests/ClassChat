@@ -1,0 +1,27 @@
+@mixin border-config() {
+    border: 1px solid rgb(36, 35, 35);
+}
+
+.auth-container {
+
+    width: 100vw;
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+
+    .auth-box {
+        padding: 50px 50px;
+        height: 30vw;
+        width: 35vw;
+        @include border-config();
+        border-radius: 20px;
+
+        #formBasicEmail, #formBasicPassword {
+            background: none;
+            @include border-config();
+        }
+    }
+
+        
+}
+
