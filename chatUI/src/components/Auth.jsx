@@ -1,6 +1,6 @@
 import '../styles/auth.scss';
 import Form from 'react-bootstrap/Form';
-import { Flex } from '@chakra-ui/react';
+import { Flex, Stack } from '@chakra-ui/react';
 import { FcGoogle } from 'react-icons/fc';
 
 
@@ -21,14 +21,14 @@ function Auth() {
                       <Form.Label>Password</Form.Label>
                       <Form.Control required type="password" placeholder="Password" />
                     </Form.Group>
-                    <Flex textAlign={"center"} flexDirection={"column"} gap={"20px"} id='auth-flex' justifyContent={"center"}>
+                    <Stack direction={"row"} gap={"5px"} id='auth-btns' marginTop={"50px"}>
                         <button className="auth-btn" type="submit">Login</button>
                         <button className="auth-btn" type="submit">Register</button>
-                    </Flex>
+                    </Stack>
                 </Form>
                 <hr />
                 <Flex flexDirection={"row"} justifyContent={"center"} id='oauth-flex' gap={"20px"}>
-                    <button><FcGoogle /></button>
+                    <button>Continue with <FcGoogle id='google'/></button>
                 </Flex>
             </div>
         </div>
